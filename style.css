@@ -45,7 +45,8 @@ body {
 }
 
 .background {
-  background: #f4f4f4;
+  background: #333;
+  color: #fff;
   position: fixed;
   right: 0;
   width: 100%;
@@ -54,13 +55,13 @@ body {
 }
 
 .clickable {
-  color: dodgerblue;
+  color: rgb(192, 81, 243);
   cursor: pointer;
   user-select: none;
 }
 
 .clickable:hover {
-  color: rgb(37, 124, 201);
+  color: rgb(226, 171, 252);
 }
 
 /* Images Container */
