@@ -99,10 +99,14 @@ async function getNasaPictures() {
   loader.classList.remove("hidden");
   try {
     const response = await fetch(apiURL);
+    if (!response.ok) {
+      throw new Error("Failed to fetch data");
+    }
     resultsArray = await response.json();
     updateDOM("results");
   } catch (error) {
-    // Catch Error Here
+    console.error("Error fetching data:", error.message);
+    alert("Error fetching data: " + error.message);
   }
 }
 
